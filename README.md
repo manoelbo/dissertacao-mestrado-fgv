@@ -35,6 +35,28 @@ Os notebooks esperam uma estrutura de dados (geralmente relativa ao diretório d
 
 ---
 
+## Arquivos não incluídos no repositório
+
+A pasta **`Notebooks/data/`** (e todo o seu conteúdo) **não foi enviada ao GitHub** devido ao limite de **100 MB por arquivo** da plataforma. Essa pasta contém bases pesadas geradas ou utilizadas pelos notebooks:
+
+| Subpasta | Conteúdo | Observação |
+|----------|----------|------------|
+| **data/input/** | Planilha ILO (Gmyrek et al.), crosswalks CBO/ISCO, O*NET, etc. | Alguns arquivos com dezenas de MB. |
+| **data/raw/** | Microdados PNAD e CAGED por ano (parquet) | Arquivos de 250 MB a ~500 MB cada; total na ordem de GB. |
+| **data/processed/** | Painéis agregados (CAGED mensal, municipal, crosswalk, Anatel, IPCA) | Inclui arquivos de centenas de MB (ex.: `painel_caged_municipio.parquet`). |
+| **data/output/** | Bases analíticas finais (PNAD-ILO merged, painéis DiD-ready, painel CAGED×município×Anatel) | Vários arquivos acima de 100 MB. |
+| **data/cache/** | Cache de painéis da etapa 3 (ex.: `painel_3b_df_reg.parquet`, `painel_3b_df_ext.parquet`) | Arquivos de centenas de MB. |
+
+**Como reproduzir ou obter os dados:**
+
+1. **Reproduzir localmente:** executar os notebooks na ordem indicada (1a → 1b → 2a → 2b → 2c → 3a → 3b) com acesso ao BigQuery (Base dos Dados) para PNAD, CAGED e Anatel; os notebooks geram e gravam os arquivos em `Notebooks/data/`.
+2. **Dados sob solicitação:** para as bases já processadas (sem BigQuery), é possível disponibilizá-las sob solicitação; contato pode ser indicado na página do repositório ou da dissertação.
+3. **Armazenamento externo:** versões dos dados podem ser publicadas em repositórios de dados (ex.: Zenodo, Figshare, OSF); em caso de existência, o link será incluído aqui ou no README.
+
+O repositório inclui **README**, **notebooks**, **PDFs** (em `PDFs/`), **.gitignore** e a pasta **`Notebooks/outputs/`** (tabelas e figuras resultantes das análises), que são leves e suficientes para acompanhar a estrutura do projeto e os resultados.
+
+---
+
 ## Resumo do que tem em cada notebook
 
 | Notebook | Conteúdo principal |
