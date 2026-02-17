@@ -1,0 +1,19 @@
+Outcome,N coefs pré,Sig. (p<0.05),p-valor conjunto,Status
+Log(Admissões),11,0,0.639,PARALELAS
+Log(Desligamentos),11,5,0.000,PREOCUPAÇÃO
+Saldo Líquido,11,0,0.396,PARALELAS
+Log(Salário Admissão Nominal),11,0,0.985,PARALELAS
+Log(Salário Real Admissão),11,0,0.993,PARALELAS
+% Superior (Admissão),11,0,0.996,PARALELAS
+Log(Salário Mulheres),11,0,0.073,PREOCUPAÇÃO
+Log(Salário Homens),11,0,0.958,PARALELAS
+Log(Salário Jovens),11,0,0.265,PARALELAS
+Log(Salário Não-Jovens),11,0,0.696,PARALELAS
+Log(Salário Brancos),11,0,0.516,PARALELAS
+Log(Salário Negros),11,0,0.983,PARALELAS
+Log(Salário Superior),11,0,0.657,PARALELAS
+Log(Salário Médio),11,0,0.825,PARALELAS
+Log(Admissões Mulheres),11,0,0.853,PARALELAS
+Log(Admissões Homens),11,0,0.884,PARALELAS
+Log(Admissões Jovens),11,0,0.696,PARALELAS
+Log(Admissões Negros),11,0,0.894,PARALELAS

@@ -1,0 +1,2 @@
+model,outcome,coef,se,p_value,stars,n_obs,n_clusters,vcov
+FE+Controls (cluster cbo_2d),ln_salario_adm,-0.06308483660012636,0.03636186546824781,0.08960064477616547,*,32988,,cbo_2d
